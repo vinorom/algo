@@ -1,0 +1,4 @@
+add_executable(AStandingOvation AStandingOvation.cpp)
+add_executable(BInfiniteHouseOfPancakes BInfiniteHouseOfPancakes.cpp)
+add_executable(CDijkstra CDijkstra.cpp)
+add_executable(DOminousOmino DOminousOmino.cpp)
