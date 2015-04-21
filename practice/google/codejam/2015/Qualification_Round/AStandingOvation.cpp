@@ -1,5 +1,5 @@
 /**
- * Problem: https://code.google.com/codejam/contest/6224486/dashboard#s=p0
+ * Problem: http://code.google.com/codejam/contest/6224486/dashboard#s=p0
  */
 #include <iostream>
 
