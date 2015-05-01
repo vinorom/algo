@@ -1,0 +1,3 @@
+add_executable(AChargingChaos AChargingChaos.cpp)
+add_executable(BFullBinaryTree BFullBinaryTree.cpp)
+add_executable(CProperShuffle CProperShuffle.cpp)
