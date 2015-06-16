@@ -1,0 +1,3 @@
+add_executable(SudokuSwap SudokuSwap.cpp)
+add_executable(HauntedHouse HauntedHouse.cpp)
+add_executable(HuskarTuskarAndBalls HuskarTuskarAndBalls.cpp)
