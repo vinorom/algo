@@ -21,9 +21,7 @@ int main()
     {
         cin >> number;
         int dn = number.size();
-        int next_order = 0;
-        int off = 1;
-        for (; off <= dn || next_order != 0; ++off)
+        for (int off = 1, next_order = 0; off <= dn || next_order != 0; ++off)
         {
             int s = next_order;
             if (off <= dn) s += number[dn - off] - '0';
