@@ -14,7 +14,7 @@ using namespace std;
 void mult2(string& value) // = value * 2
 {
     int next_order = 0;
-    for (int pos = value.size() - 1; pos >= 0; --pos)
+    for (int pos = (int)value.size() - 1; pos >= 0; --pos)
     {
         int d = value[pos] - '0';
         d *= 2;
