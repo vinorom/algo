@@ -43,7 +43,7 @@ int get_alpha_value(const string& value)
     return res;
 }
 
-//#define REAL_EULER_PROBLEM
+//#define ORIGINAL_EULER_PROBLEM
 
 int main()
 {
@@ -54,15 +54,16 @@ int main()
 
     std::sort(names.begin(), names.end());
 
-#ifdef REAL_EULER_PROBLEM
+#ifdef ORIGINAL_EULER_PROBLEM
+
     int total_score = 0;
     for (int i = 0; i < N; ++i)
     {
         total_score += (i + 1) * get_alpha_value(names[i]);
     }
     cout << total_score << endl;
-    return 0;
-#endif
+
+#else
 
     int Q;
     cin >> Q;
@@ -74,6 +75,8 @@ int main()
         int score = (pos + 1) * get_alpha_value(name);
         cout << score << endl;
     }
+
+#endif
 
     return 0;
 }
