@@ -16,7 +16,7 @@ const int MAX4 = 4 * MAX;
 int sum_divisors[MAX4] = {0};
 int prefix_sum_amicable[MAX] = {0};
 
-void pre_calculate_amicables()
+void precompute_amicables()
 {
     std::fill(sum_divisors + 2, sum_divisors + MAX, 1);
     for (int i = 2; i < MAX4 / 2; ++i)
@@ -33,7 +33,7 @@ void pre_calculate_amicables()
 
 int main()
 {
-    pre_calculate_amicables();
+    precompute_amicables();
 
     int T;
     cin >> T;
