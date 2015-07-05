@@ -60,15 +60,15 @@ ll solve(int N, int K)
         // each rotation leaves K^GCD(i,N) elements unchanged
         int g = gcd(i, N);
         res = pow_mod(K, g, rotation_count * MOD);
-        if (g == N / 2) // single <N/2> rotation
+        if (N % 2 == 0 && g == N / 2) // single <N/2> rotation
         {
             necklace_count += res / rotation_count;
             invariants_mod += res % rotation_count;
         }
         else // two rotations <i> and <-i> (clockwise and counterclockwise)
         {
-            necklace_count += res / rotation_count * 2;
-            invariants_mod += res % rotation_count * 2;
+            necklace_count += (res / rotation_count) * 2;
+            invariants_mod += (res % rotation_count) * 2;
         }
     }
 
