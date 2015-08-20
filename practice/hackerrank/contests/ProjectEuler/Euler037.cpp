@@ -15,8 +15,6 @@ typedef long long ll;
 
 ll solve(int N)
 {
-    ll sum = 0;
-
     bool is_prime[N];
     std::fill(is_prime, is_prime + N, true);
     is_prime[0] = is_prime[1] = false;
@@ -26,12 +24,21 @@ ll solve(int N)
         if (is_prime[i])
         {
             for (ll j = i*i; j < N; j += i) is_prime[j] = false;
+        }
+    }
 
-            int pow10 = 1;
-            ll v = i;
-            while (v / pow10 != 0 && is_prime[v / pow10] && (pow10 == 1 || is_prime[v % pow10])) pow10 *= 10;
+    ll sum = 0;
+    for (int i = 8; i < N; ++i)
+    {
+        if (is_prime[i])
+        {
+            bool trunc_prime = true;
+            for (int pow10 = 10; i / pow10 != 0 && trunc_prime; pow10 *= 10)
+            {
+                if (!is_prime[i / pow10] || !is_prime[i % pow10]) trunc_prime = false;
+            }
 
-            if (i > 7 && v / pow10 == 0) sum += i;
+            if (trunc_prime) sum += i;
         }
     }
 
