@@ -33,9 +33,11 @@ void precompute_primes()
     }
 }
 
+//#define ORIGINAL_EULER_PROBLEM
+
 ll solve(int N)
 {
-    ll sum = 0;
+    ll res = 0;
     int max_pow10 = 1;
     for (int i = 0; i < primes.size() && primes[i] < N; ++i)
     {
@@ -50,9 +52,14 @@ ll solve(int N)
             if (!is_prime[circular]) circular_prime = false;
         }
 
-        if (circular_prime) sum += prime;
+        if (circular_prime)
+#ifdef ORIGINAL_EULER_PROBLEM
+            ++res; // count
+#else
+            res += prime; // sum
+#endif
     }
-    return sum;
+    return res;
 }
 
 int main()
