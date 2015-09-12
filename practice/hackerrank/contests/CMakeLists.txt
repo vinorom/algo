@@ -1,8 +1,11 @@
-add_subdirectory(ProjectEuler)
+add_subdirectory(projecteuler)
+
+#add_subdirectory(epiccode)
+add_subdirectory(infinitum12)
+add_subdirectory(countercode)
+
+add_subdirectory(101hack26)
+
 add_subdirectory(w15)
-#add_subdirectory(EpicCode)
-add_subdirectory(101HackJun2015)
-add_subdirectory(AdInfinitum12)
 add_subdirectory(w16)
-add_subdirectory(CounterCode2015)
 add_subdirectory(w17)

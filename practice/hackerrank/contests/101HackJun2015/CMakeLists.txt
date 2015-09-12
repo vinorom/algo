@@ -1,5 +1,0 @@
-add_executable(SherlockAndValidString SherlockAndValidString.cpp)
-add_executable(SherlockAndPhysics SherlockAndPhysics.cpp)
-add_executable(SherlockAndWeirdSum SherlockAndWeirdSum.cpp)
-add_executable(SherlockAndUniqueSubstrings SherlockAndUniqueSubstrings.cpp)
-add_executable(SherlockAndQueriesOnTheGraph SherlockAndQueriesOnTheGraph.cpp)
