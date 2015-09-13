@@ -10,11 +10,14 @@
 
 using namespace std;
 
-template <typename Value>
-struct segment_tree
+template <typename T>
+class RSQ
 {
     int size;
-    vector<Value> tree;
+    vector<T> tree;
+
+public:
+    RSQ(int n) { init(n); }
 
     void init(int n)
     {
@@ -22,7 +25,7 @@ struct segment_tree
         tree.assign(size*2, 0);
     }
 
-    void update(int i, Value x) // [i]=x
+    void update(int i, T x) // [i]=x
     {
         tree[size+i] = x;
         for(int k = (size+i)/2; k > 0; k >>= 1)
@@ -31,25 +34,25 @@ struct segment_tree
         }
     }
 
-    Value operator[](int i) const // [i]
+    T operator[](int i) const // [i]
     {
         return tree[size+i];
     }
 
-    Value query(int l, int r) const // [l,r]
+    T query(int l, int r) const // [l,r]
     {
         ++r; //[l, r)
 
-        Value m = 0;
+        T sum = 0;
         for(; l && l + (l&-l) <= r; l += l&-l)
         {
-            m += tree[(size+l) / (l&-l)];
+            sum += tree[(size+l) / (l&-l)];
         }
         for(; l < r; r -= r&-r)
         {
-            m += tree[(size+r) / (r&-r) - 1];
+            sum += tree[(size+r) / (r&-r) - 1];
         }
-        return m;
+        return sum;
     }
 };
 
@@ -91,16 +94,15 @@ int main()
     i = 0, generate(begin(qindices), end(qindices), [&i]() { return i++; });
     sort(begin(qindices), end(qindices), [&queries](int lhv, int rhv) { return queries[lhv].k > queries[rhv].k; });
 
-    segment_tree<int> st;
-    st.init(N);
+    RSQ<int> rsq(N);
     for (i = 0, j = 0; i < Q; ++i)
     {
         query& q = queries[qindices[i]];
         for (; j < N && arr[j].first > q.k; ++j)
         {
-            st.update(arr[j].second, 1);
+            rsq.update(arr[j].second, 1);
         }
-        q.answer = st.query(q.l, q.r);
+        q.answer = rsq.query(q.l, q.r);
     }
 
     for (i = 0; i < Q; ++i)
