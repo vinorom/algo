@@ -1,7 +1,7 @@
 /**
- * Source: http://www.spoj.com/problems/FREQUENT
+ * Source: http://www.spoj.com/problems/KGSS
  * Technique: segment tree
- * Complexity: O( N + Q*log(N) )
+ * Complexity: O( (N+Q)*log(N) )
  */
 
 #include <iostream>
@@ -81,54 +81,48 @@ int main()
 {
     std::ios_base::sync_with_stdio(false);
 
-    while (true)
+    int N;
+    cin >> N;
+
+    vector<int> arr(N);
+    for (int i = 0; i < N; ++i) cin >> arr[i];
+
+    int Q;
+    cin >> Q;
+
+    RMQ<int> rmq(arr.begin(), arr.end());
+
+    vector<pair<int,int>> iarr(N);
+    for (int i = 0; i < N; ++i) iarr[i] = make_pair(arr[i], i);
+    sort(begin(iarr), end(iarr));
+
+    for (int i = 0; i < Q; ++i)
     {
-        int N, Q;
-        cin >> N;
-        if (N == 0) break;
-
-        cin >> Q;
-
-        vector<int> arr(N);
-        vector<int> counts(N, 0);
-        for (int i = 0, last_idx = 0; i < N; ++i)
+        char t;
+        cin >> t;
+        switch (t)
         {
-            cin >> arr[i];
-            if (i == 0 || arr[i] != arr[last_idx])
+            case 'U':
             {
-                last_idx = i;
-                counts[last_idx] = 1;
+                int idx, val;
+                cin >> idx >> val;
+                rmq.update(--idx, val);
+                break;
             }
-            else
+            case 'Q':
             {
-                counts[last_idx]++;
+                int x, y;
+                cin >> x >> y;
+                --x, --y;
+                int answer = rmq.query(x, y);
+                int idx = lower_bound(iarr.begin(), iarr.end(), make_pair(answer, -1)) - iarr.begin();
+                while (iarr[idx].second < x) ++idx;
+                rmq.update(iarr[idx].second, -RMQ<int>::INF);
+                answer += rmq.query(x, y);
+                rmq.update(iarr[idx].second, iarr[idx].first);
+                cout << answer << '\n';
+                break;
             }
-        }
-
-        RMQ<int> rmq(counts.begin(), counts.end());
-
-        for (int i = 0; i < Q; ++i)
-        {
-            int l, r;
-            cin >> l >> r;
-            --l, --r;
-
-            int answer;
-            if (rmq.query(l, r) == 0)
-            {
-                answer = r - l + 1;
-            }
-            else
-            {
-                int count_left = 0;
-                int count_right = 0;
-                for (; counts[l] == 0; ++l) ++count_left;
-                for (; counts[r] == 0; --r) ++count_right;
-                --r, ++count_right;
-                answer = max(rmq.query(l, r), max(count_left, count_right));
-            }
-
-            cout << answer << '\n';
         }
     }
 
