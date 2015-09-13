@@ -1,7 +1,7 @@
 /**
  * Source: http://www.spoj.com/problems/DQUERY
- * Approach: MO's algorithm
- * Complexity: O( (N+Q) * sqrt N )
+ * Technique: MO's algorithm
+ * Complexity: O( (N+Q)*sqrt(N) )
  */
 
 #include <stdio.h>
