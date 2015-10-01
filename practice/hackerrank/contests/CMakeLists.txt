@@ -4,6 +4,8 @@ add_subdirectory(projecteuler)
 add_subdirectory(infinitum12)
 add_subdirectory(countercode)
 
+add_subdirectory(code-cpp-september-2015)
+
 add_subdirectory(101hack26)
 
 add_subdirectory(w15)
