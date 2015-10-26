@@ -12,6 +12,7 @@ add_subdirectory(countercode)
 
 add_subdirectory(2014-icpc-southeastern-europe)
 add_subdirectory(2014-icpc-north-central-regional-north-america)
+add_subdirectory(2014-icpc-mid-central-usa-regional)
 
 add_subdirectory(code-cpp-september-2015)
 
