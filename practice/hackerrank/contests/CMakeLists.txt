@@ -11,6 +11,7 @@ add_subdirectory(w17)
 #add_subdirectory(epiccode)
 add_subdirectory(infinitum12)
 add_subdirectory(countercode)
+add_subdirectory(codestorm)
 
 add_subdirectory(2014-icpc-southeastern-europe)
 add_subdirectory(2014-icpc-north-central-regional-north-america)
