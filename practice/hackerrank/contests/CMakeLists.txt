@@ -13,10 +13,12 @@ add_subdirectory(infinitum12)
 add_subdirectory(countercode)
 add_subdirectory(codestorm)
 
-add_subdirectory(2014-icpc-southeastern-europe)
-add_subdirectory(2014-icpc-north-central-regional-north-america)
+add_subdirectory(2014-icpc-central-europe-regional)
 add_subdirectory(2014-icpc-mid-central-usa-regional)
+add_subdirectory(2014-icpc-north-central-regional-north-america)
+add_subdirectory(2014-icpc-southeastern-europe)
 add_subdirectory(round-1-acm-icpc-warmup-2015)
+add_subdirectory(round-2-acm-icpc-warmup-2015)
 
 add_subdirectory(code-cpp-september-2015)
 
