@@ -1,4 +1,4 @@
-file(GLOB ALL_SOURCES RELATIVE . *.cpp)
+file(GLOB ALL_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.cpp)
 
 foreach(source_file ${ALL_SOURCES})
     string(REPLACE ".cpp" "" exec_file ${source_file})
