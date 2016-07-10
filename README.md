@@ -1,2 +1,2 @@
-# algo
-Algorithms and data structures
+# contests
+Solutions for problems from programming contests
