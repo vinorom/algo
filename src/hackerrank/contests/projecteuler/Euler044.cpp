@@ -7,8 +7,7 @@
  *      https://www.hackerrank.com/contests/projecteuler/challenges/euler044
  */
 
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -25,21 +24,29 @@ bool is_pentagonal(ll p)
     return get_pentagonal(n) == p;
 }
 
-#define ORIGINAL_EULER_PROBLEM
+//#define ORIGINAL_EULER_PROBLEM
 
 int main()
 {
 #ifdef ORIGINAL_EULER_PROBLEM
-    for (int i = 1; ; ++i)
+    int N;
+    cin >> N;
+    ll diff = numeric_limits<ll>::max();
+    for (int n = 1; n < N; ++n)
     {
-        ll pi = get_pentagonal(i);
-        for (int j = i - 1; j > 0; --j)
+        ll pn = get_pentagonal(n);
+        for (int k = n - 1; k > 0; --k)
         {
-            ll pj = get_pentagonal(j);
-//            if (is_pentagonal(pn + get_))
+            ll pk = get_pentagonal(k);
+            if (pn - pk > diff) break;
+            if (is_pentagonal(pn - pk) && is_pentagonal(pn + pk))
+            {
+                diff = min(diff, pn - pk);
+                break;
+            }
         }
     }
-
+    cout << diff << endl;
 #else
     int N, K;
     cin >> N >> K;
