@@ -1,4 +1,5 @@
 add_subdirectory(codechef)
+add_subdirectory(codility)
 add_subdirectory(google)
 add_subdirectory(hackerrank)
 add_subdirectory(spoj)
