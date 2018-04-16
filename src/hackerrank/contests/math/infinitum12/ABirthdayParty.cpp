@@ -47,7 +47,7 @@ int main()
 
     int N;
     cin >> N;
-    int eq[N][N] = {0};
+    int eq[N][N];
     for (int i = 0; i < N; ++i)
     {
         int K;

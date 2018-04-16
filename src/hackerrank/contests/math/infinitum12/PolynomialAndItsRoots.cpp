@@ -5,7 +5,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 #include <assert.h>
+#include <math.h>
 
 using namespace std;
 

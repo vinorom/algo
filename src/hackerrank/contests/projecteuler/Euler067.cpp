@@ -21,10 +21,13 @@ int main()
         int N;
         cin >> N;
 
-        int row[N] = {0};
-        int totals[N] = {0};
+        int row[N];
+        int totals[N];
         for (int i = 0; i < N; ++i)
         {
+            row[i] = 0;
+            totals[i] = 0;
+
             int total_prev = 0;
             for (int j = 0; j <= i; ++j)
             {

@@ -162,7 +162,8 @@ ll solve(graph& g)
     dijkstra(g_rev, N-1);
     sort(idx_rev.begin(), idx_rev.end(), [&g_rev](int lhv, int rhv) { return g_rev[lhv].key < g_rev[rhv].key; });
 
-    ll rev_prefix_sum[N+1] = {0};
+    ll rev_prefix_sum[N+1];
+    rev_prefix_sum[0] = 0;
     for (i = 0; i < N; ++i) rev_prefix_sum[i+1] = rev_prefix_sum[i] + g_rev[idx_rev[i]].key;
 
     ll count = 0;

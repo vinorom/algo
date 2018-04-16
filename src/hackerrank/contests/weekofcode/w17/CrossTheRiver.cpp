@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <math.h>
 
 using namespace std;
 
@@ -72,18 +73,19 @@ struct rock
 {
     int x, y, z;
     rock(int x_ = 0, int y_ = 0, int z_ = 0): x(x_), y(y_), z(z_) {}
-    bool operator<(const rock& rhv) { return x < rhv.x; }
 };
 
-const int MAXN = 100000;
+bool operator<(const rock& lhv, const rock& rhv) { return lhv.x < rhv.x; }
 
-rock rocks[MAXN];
-int ans[MAXN] = {0};
-int st[ST_SIZE(MAXN)];
+const int MAXN = 100000;
 
 int main()
 {
     using namespace segment_tree::RMQ;
+
+    rock rocks[MAXN];
+    int ans[MAXN];
+    int st[ST_SIZE(MAXN)];
 
     int N, H, dh, dw;
     cin >> N >> H >> dh >> dw;

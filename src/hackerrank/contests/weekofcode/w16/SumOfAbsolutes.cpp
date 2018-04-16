@@ -10,7 +10,8 @@ int main()
 {
     int N, Q;
     cin >> N >> Q;
-    int prefix_odd_sum[N + 1] = {0}; // prefix sum modulo 2
+    int prefix_odd_sum[N + 1]; // prefix sum modulo 2
+    prefix_odd_sum[0] = 0;
     for (int i = 1; i <= N; ++i)
     {
         int v;
