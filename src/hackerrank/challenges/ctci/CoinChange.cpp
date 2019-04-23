@@ -6,7 +6,7 @@
  *      https://www.hackerrank.com/challenges/ctci-coin-change
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

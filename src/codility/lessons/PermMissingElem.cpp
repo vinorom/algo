@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/3-time_complexity/perm_missing_elem/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

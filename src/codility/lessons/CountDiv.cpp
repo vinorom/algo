@@ -2,8 +2,6 @@
  * Link: https://codility.com/programmers/lessons/5-prefix_sums/count_div/
  */
 
-#include <bits/stdc++.h>
-
 using namespace std;
 
 int solution(int A, int B, int K)

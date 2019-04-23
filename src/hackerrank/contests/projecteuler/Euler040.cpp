@@ -7,7 +7,7 @@
  *      https://www.hackerrank.com/contests/projecteuler/challenges/euler040
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

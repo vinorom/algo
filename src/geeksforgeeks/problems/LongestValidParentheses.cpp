@@ -2,7 +2,9 @@
  * Link: http://www.practice.geeksforgeeks.org/problem-page.php?pid=1247
  */
 
-#include <bits/stdc++.h>
+#include <string>
+#include <stack>
+#include <iostream>
 
 using namespace std;
 

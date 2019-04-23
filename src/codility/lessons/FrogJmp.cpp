@@ -2,10 +2,6 @@
  * Link: https://codility.com/programmers/lessons/3-time_complexity/frog_jmp/
  */
 
-#include <bits/stdc++.h>
-
-using namespace std;
-
 int solution(int x, int y, int d)
 {
     int dist = y - x;

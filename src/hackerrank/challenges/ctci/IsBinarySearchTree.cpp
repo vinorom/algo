@@ -6,7 +6,7 @@
  *      https://www.hackerrank.com/challenges/ctci-is-binary-search-tree
  */
 
-#include <bits/stdc++.h>
+#include <limits>
 
 struct Node
 {

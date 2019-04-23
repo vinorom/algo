@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/7-stacks_and_queues/brackets/
  */
 
-#include <bits/stdc++.h>
+#include <stack>
+#include <string>
 
 using namespace std;
 

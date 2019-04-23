@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <limits>
 
 using namespace std;
 

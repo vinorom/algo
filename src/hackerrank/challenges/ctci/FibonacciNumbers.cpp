@@ -6,7 +6,8 @@
  *      https://www.hackerrank.com/challenges/ctci-fibonacci-numbers
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 

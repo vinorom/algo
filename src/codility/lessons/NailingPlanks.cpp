@@ -2,7 +2,9 @@
  * Link: https://codility.com/programmers/lessons/14-binary_search_algorithm/nailing_planks/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <bitset>
+#include <iostream>
 
 using namespace std;
 

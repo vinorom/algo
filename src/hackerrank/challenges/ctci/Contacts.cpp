@@ -6,7 +6,10 @@
  *      https://www.hackerrank.com/challenges/ctci-contacts
  */
 
-#include <bits/stdc++.h>
+#include <map>
+#include <stack>
+#include <string>
+#include <iostream>
 
 using namespace std;
 

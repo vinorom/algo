@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/6-sorting/distinct/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <bitset>
 
 using namespace std;
 

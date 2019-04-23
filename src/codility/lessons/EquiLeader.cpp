@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/8-leader/equi_leader/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 

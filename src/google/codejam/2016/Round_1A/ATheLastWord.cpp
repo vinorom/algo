@@ -2,7 +2,8 @@
  * http://code.google.com/codejam/contest/4304486/dashboard#s=p0
  */
 
-#include <bits/stdc++.h>
+#include <string>
+#include <iostream>
 
 using namespace std;
 

@@ -2,7 +2,9 @@
  * http://code.google.com/codejam/contest/11254486/dashboard#s=p2
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <unordered_map>
+#include <iostream>
 
 using namespace std;
 

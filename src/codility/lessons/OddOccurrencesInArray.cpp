@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 

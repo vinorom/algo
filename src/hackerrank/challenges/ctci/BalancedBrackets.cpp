@@ -6,7 +6,9 @@
  *      https://www.hackerrank.com/challenges/ctci-balanced-brackets
  */
 
-#include <bits/stdc++.h>
+#include <stack>
+#include <string>
+#include <iostream>
 
 using namespace std;
 

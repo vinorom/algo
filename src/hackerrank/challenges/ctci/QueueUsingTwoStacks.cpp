@@ -6,7 +6,8 @@
  *      https://www.hackerrank.com/challenges/ctci-queue-using-two-stacks
  */
 
-#include <bits/stdc++.h>
+#include <stack>
+#include <iostream>
 
 using namespace std;
 

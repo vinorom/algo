@@ -6,7 +6,9 @@
  *      https://www.hackerrank.com/challenges/ctci-comparator-sorting
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <string>
+#include <iostream>
 
 using namespace std;
 

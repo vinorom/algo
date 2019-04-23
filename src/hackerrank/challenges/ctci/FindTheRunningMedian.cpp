@@ -6,7 +6,9 @@
  *      https://www.hackerrank.com/challenges/ctci-find-the-running-median
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
+#include <iomanip>
 
 using namespace std;
 

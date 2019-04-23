@@ -2,7 +2,7 @@
  * http://www.codechef.com/SNCKQL16/problems/KGOOD
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

@@ -7,7 +7,9 @@
  *      https://www.hackerrank.com/contests/projecteuler/challenges/euler089
  */
 
-#include <bits/stdc++.h>
+#include <string>
+#include <iostream>
+#include <sstream>
 
 using namespace std;
 

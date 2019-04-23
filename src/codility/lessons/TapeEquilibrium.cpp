@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

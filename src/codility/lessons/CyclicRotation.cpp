@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/2-arrays/cyclic_rotation/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 
 using namespace std;
 

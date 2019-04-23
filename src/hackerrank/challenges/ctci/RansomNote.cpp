@@ -6,7 +6,8 @@
  *      https://www.hackerrank.com/challenges/ctci-ransom-note
  */
 
-#include <bits/stdc++.h>
+#include <unordered_map>
+#include <iostream>
 
 using namespace std;
 

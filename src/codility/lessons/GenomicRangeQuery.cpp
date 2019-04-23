@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <string>
 
 using namespace std;
 

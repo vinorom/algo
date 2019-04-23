@@ -2,7 +2,9 @@
  * Link: https://codility.com/programmers/lessons/14-binary_search_algorithm/min_max_division/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
+#include <numeric>
 
 using namespace std;
 

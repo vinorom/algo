@@ -2,7 +2,11 @@
  * http://code.google.com/codejam/contest/4314486/dashboard#s=p0
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <deque>
+#include <string>
+#include <iostream>
+#include <numeric>
 
 using namespace std;
 

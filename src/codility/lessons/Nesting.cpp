@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/7-stacks_and_queues/nesting/
  */
 
-#include <bits/stdc++.h>
+#include <string>
 
 using namespace std;
 

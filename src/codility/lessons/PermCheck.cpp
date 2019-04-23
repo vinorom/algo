@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/4-counting_elements/perm_check/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

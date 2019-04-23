@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/7-stacks_and_queues/fish/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

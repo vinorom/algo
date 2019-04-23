@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/5-prefix_sums/passing_cars/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

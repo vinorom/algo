@@ -6,7 +6,8 @@
  *      https://www.hackerrank.com/challenges/ctci-lonely-integer
  */
 
-#include <bits/stdc++.h>
+#include <bitset>
+#include <iostream>
 
 using namespace std;
 

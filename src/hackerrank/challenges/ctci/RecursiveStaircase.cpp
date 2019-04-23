@@ -6,7 +6,7 @@
  *      https://www.hackerrank.com/challenges/ctci-recursive-staircase
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

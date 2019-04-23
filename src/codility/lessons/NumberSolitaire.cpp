@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

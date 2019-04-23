@@ -2,7 +2,8 @@
  * Link: https://codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
+#include <stack>
 
 using namespace std;
 

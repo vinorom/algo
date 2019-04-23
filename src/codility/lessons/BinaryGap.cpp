@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/1-iterations/binary_gap/
  */
 
-#include <bits/stdc++.h>
+#include <algorithm>
 
 using namespace std;
 

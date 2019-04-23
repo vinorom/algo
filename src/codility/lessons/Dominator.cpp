@@ -2,7 +2,7 @@
  * Link: https://codility.com/programmers/lessons/8-leader/dominator/
  */
 
-#include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 

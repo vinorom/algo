@@ -6,8 +6,6 @@
  *      https://www.hackerrank.com/challenges/ctci-linked-list-cycle
  */
 
-#include <bits/stdc++.h>
-
 struct Node
 {
     int data;

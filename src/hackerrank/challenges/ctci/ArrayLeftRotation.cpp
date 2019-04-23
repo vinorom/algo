@@ -6,7 +6,8 @@
  *      https://www.hackerrank.com/challenges/ctci-array-left-rotation
  */
 
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
 
 using namespace std;
 
